@@ -53,6 +53,8 @@ div.container {
     font-family: tahoma;
     font-size: 18px;
     color: #2c286d;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -79,12 +81,30 @@ div.container {
         color: black;
         /*display: inline-block;*/
         width: 90px;
+        display: block;
         clear: left;
         padding-right: 10px
         /*margin-right:30px;*/
         text-align: right;
         float: left;
 }
+
+.label1{
+        font-family: tahoma;
+        font-size: 14px;
+        color: black;
+        /*display: inline-block;*/
+        width: 90px;
+        clear: left;
+        padding-right: 10px
+        /*margin-right:30px;*/
+        text-align: right;
+        float: left;
+}
+/*
+input:focus 
+{ color: green; outline: 1px solid green; }
+  input:active { color: red; outline: 1px solid red; }*/
 
 .input
 {
@@ -93,6 +113,11 @@ div.container {
     width: 360px;
     height: 25px;
     float: left;
+
+}
+
+.label:target .input:focus {
+    color: red; outline: 5px solid red;
 }
 
 .formbox {
