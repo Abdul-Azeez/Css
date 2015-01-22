@@ -5,7 +5,7 @@ font-style: italic;
 font-size: 18px;
 background-color: #ffffff;
 padding: 0px 20px;
-margin-left: 2px;
+margin-left: 2px auto;
 height:  37px;
 list-style-type: none;
 position: relative;
@@ -14,7 +14,8 @@ position: relative;
 	/*width: 960px;*/
 	/*marging: 2px auto;*/
 	padding: 0px 20px;
-	margin-left: 2px;
+	margin-left: 2px auto;
+	margin-right: auto;
 	text-align: left;
 	/*background-color: #cfcfcf;*/
 	color:#000;
@@ -25,15 +26,10 @@ position: relative;
 	list-style-type:none;
 	padding: 0px 5px;
 	margin: 0px;
-	postion: relative;
-	color:#000;
+	position: relative;
+	color:#8c8c8c;
 }
 
-
-/*.nav ul li:first-of-type{
-	margin-left: 0px
-}*/
-/* Condition number 1 */
 .nav ul li{
 	display: inline-block;	
 	color:#000;
@@ -47,13 +43,27 @@ position: relative;
 
 }
 
+/*.nav ul li:first-child > a:hover{
+	color:#8c8c8c;
+	
+}*/
+
+.nav ul li:hover + a{
+	color:#8c8c8c;
+}
+
+
+.nav ul li:first-child{
+	margin-left: none;
+}
+
 .nav ul li:hover {
 /*display: inline-bloc*/
 background color: #000;
-color: #8c8c8c;
+color: black;
 height: 37px;
-padding: 0px 2px;
-margin-left: 2px;
+/*padding: 0px 2px;*/
+/*margin-left: 2px;*/
 font: Georgia;
 font-style: italic;
 font-size: 18px;
@@ -96,30 +106,27 @@ font-size: 18px;
 		text-align: left;	
 }
 
+.nav ul ul li:last-child a
+ {
+border-bottom: none ;
+}
+
 .nav ul ul li a {
-	color: #cfcfcf;
+	color: black;
 	font-family: Georgia;
 	font-size:14px;
 	padding: 5px 0px;
 	border-bottom: 1px solid #cfcfcf;
 	font-style: italic;
+}
 
-	
-	
-}
-.nav ul ul li a:last-child
-{
-border-bottom: 0px ;
-}
 
 .nav ul ul li a:visited{
 	color: #000;
 	font-family: Georgia;
 	font-size:14px;
-	padding: 5px 0px;
+	/*padding: 5px 0px;*/
 	border-bottom: 1px solid #cfcfcf;
-	
-	
 }
 
 .nav ul ul li a:hover {
