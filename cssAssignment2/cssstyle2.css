@@ -1,96 +1,131 @@
-.container {
-    width: 1000px;
-    height: 100%;
-    background-color: #FFF;
-    margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+.container{
+    margin: 0px auto;
+    padding: 0px;
+    width: 1060px;
+    overflow: hidden;
+    position: absolute;
+   /* text-align: center;*/
+    display: block;
 }
 
-body {
-    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-    background-color: #FFF;
-    margin: 0;
-    padding: 0;
-    color: #000;
+*{
+margin: 0px;
+padding: 0px;
 }
-ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
- /* padding: 5px 5px 5px 15px;*/
-  display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
-  /*width: 160px;*/  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
-  text-decoration: none;
-  font-size: 14px;
-  color: white;
-  /*background-color: #C6D580;*/
+body{
+    width: 1060px;
+    margin: 0px auto;
 }
-
-.lorem1{
-
-    font-family: tahoma;
-    font-size: 12px;
-    color:black;
-}
-
-.lorem2{
-
-    font-family: tahoma;
-    font-size: 14px;
-    color:#802525;
-}
-.height{
-
-    /*min-height: 60%*/
-    height:80%;
-}
-.header{
-    Background-color: #b2e7ff;
-    font-family: tahoma;
+h1{
     font-size: 24px;
     color: black;
-    text-align: center;
-    border-bottom: 2px;
-    border-bottom-color: #0ab1ff;
-    height: 20%;
+    font-family: tahoma;
 }
-.content
-{
-   /* height: 60%;*/
-    overflow: hidden;
-}
-
-
-.fixedleft
-{
-    float: left;
-    background-color: #0ab1ff;
-   /* padding: 25px 10px;*/
-    width: 25%;
+h2{
     font-family: tahoma;
     font-size: 18px;
     color:black;
 }
 
-.fixedright{
-background-color: #ededed;
-    /*padding: 20px;*/
-    width: 75%;
-   /* height: 60%;*/
-    float: right;
 
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. 
+For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain.
+ Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+    padding: 0;
+    margin: 0;
 }
 
-.fixedright2{
+ul.nav a, ul.nav a:visited { 
+    display: block; 
+    width: 160px;  
+    color:white;
     font-family: tahoma;
-    font-size:  24px;
-    color: black;
+    padding: 2px;
+    font-size: 14px;
+    text-decoration: none;
 }
 
-.footer
+.lorem1
 {
+    font-family: tahoma;
+    padding: 2px;
+    font-size: 14px;
+    color: black;
+
+}
+
+.lorem2{
+    font-family: tahoma;
+    font-size: 14px;
+    color: #802525;
+    padding-top: 20px
+}
+.color
+{
+    color:blue;
+}
+
+.header{
+    background-color: #b2e7ff;
+    font-family: tahoma;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    min-height: 20%;
+    border-bottom: 2px #0ab1ff solid;
+    padding: 20px;
+}
+
+.content{
+    /*height: 800px;*/
+   /* width: 1060px;*/
+   margin: 0 auto;
+    overflow: auto;
+    
+   /* min-height: 70%*/
+}*
+
+.fixedleft{
+    background-color: #0ab1ff;
+    padding: 25px 10px;
+    width: 250px;
+    font-family: tahoma;
+    font-size: 18px;
+    color:black;
+    float:left;
+    height: 500px;
+    overflow: hidden;
+       padding-bottom: 99999px;
+    margin-bottom: -99999px;
+    
+}
+
+.fixedright{
+background-color:#ededed;
+padding: 20px;
+font-size: 24px;
+color: black;
+width: 750px;
+float: left;
+overflow: hidden;
+   padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+.fixedleft, .fixedright {
+
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+
+.footer{
     background-color: #3cff78;
     font-family: tahoma;
     font-size: 24px;
     color: black;
     text-align: center;
-    border-bottom: 2px;
-    border-bottom-color: #0ab1ff;
-    height: 20%;
+    border-bottom: 2px #0ab1ff;
+    height: 60px;
+    padding: 10px 0;
+    position: relative;
+    clear: both; /*
 }
