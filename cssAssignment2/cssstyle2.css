@@ -5,7 +5,8 @@
     overflow: hidden;
     position: absolute;
    /* text-align: center;*/
-    display: block;
+    /*display: block;*/
+    display: table;
 }
 
 *{
@@ -71,7 +72,7 @@ ul.nav a, ul.nav a:visited {
     font-size: 24px;
     color: black;
     text-align: center;
-    min-height: 20%;
+    /*min-height: 20%;*/
     border-bottom: 2px #0ab1ff solid;
     padding: 20px;
 }
@@ -81,6 +82,8 @@ ul.nav a, ul.nav a:visited {
    /* width: 1060px;*/
    margin: 0 auto;
     overflow: auto;
+    display: table-row;
+    
     
    /* min-height: 70%*/
 }*
@@ -93,11 +96,12 @@ ul.nav a, ul.nav a:visited {
     font-size: 18px;
     color:black;
     float:left;
-    height: 500px;
-    overflow: hidden;
+    display: table-cell;
+
+/*    overflow: hidden;
        padding-bottom: 99999px;
     margin-bottom: -99999px;
-    
+    */
 }
 
 .fixedright{
@@ -106,10 +110,12 @@ padding: 20px;
 font-size: 24px;
 color: black;
 width: 750px;
-float: left;
+float: right;
 overflow: hidden;
-   padding-bottom: 99999px;
-    margin-bottom: -99999px;
+/*padding-bottom: 99999px;
+margin-bottom: -99999px;*/
+display: table-cell;
+
 }
 .fixedleft, .fixedright {
 
